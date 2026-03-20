@@ -22,138 +22,6 @@
 <meta content="https://maitemedia.com/assets/img/og/default-og.png" name="twitter:image"/>
 <link as="style" href="../../assets/css/main.css" rel="preload"/>
 <link href="../../assets/css/main.css" rel="stylesheet"/>
-<style>
-.page-hero--production-support {
-  --production-support-hero-parallax: 0px;
-  background: #081019;
-  color: var(--color-inverse);
-  isolation: isolate;
-}
-
-.page-hero--production-support::before {
-  inset: -8% 0;
-  z-index: -2;
-  background-image: url("../../assets/img/site/production-support-hero-background.jpg");
-  background-image: image-set(
-    url("../../assets/img/site/production-support-hero-background.webp") type("image/webp"),
-    url("../../assets/img/site/production-support-hero-background.jpg") type("image/jpeg")
-  );
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  transform: translate3d(0, var(--production-support-hero-parallax), 0) scale(1.08);
-  transform-origin: center center;
-  will-change: transform;
-}
-
-.page-hero--production-support::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background:
-    linear-gradient(90deg, rgba(8, 16, 25, 0.9) 0%, rgba(8, 16, 25, 0.82) 34%, rgba(8, 16, 25, 0.6) 58%, rgba(8, 16, 25, 0.42) 100%),
-    linear-gradient(180deg, rgba(8, 16, 25, 0.36) 0%, rgba(8, 16, 25, 0.18) 28%, rgba(8, 16, 25, 0.7) 100%),
-    radial-gradient(circle at 74% 20%, rgba(214, 170, 113, 0.12), transparent 26%);
-  pointer-events: none;
-}
-
-.page-hero--production-support .page-hero__inner {
-  position: relative;
-  z-index: 1;
-}
-
-.page-hero--production-support .breadcrumbs ol {
-  border-color: rgba(247, 245, 240, 0.16);
-  background: rgba(8, 16, 25, 0.4);
-  color: rgba(247, 245, 240, 0.78);
-}
-
-.page-hero--production-support .breadcrumbs li:not(:last-child)::after {
-  color: rgba(247, 245, 240, 0.36);
-}
-
-.page-hero--production-support .breadcrumbs a,
-.page-hero--production-support .breadcrumbs li[aria-current="page"] {
-  color: var(--color-inverse);
-}
-
-.page-hero--production-support .page-label {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(247, 245, 240, 0.18);
-  color: rgba(247, 245, 240, 0.96);
-}
-
-.page-hero--production-support .page-hero__eyebrow,
-.page-hero--production-support .page-hero__lead {
-  color: rgba(247, 245, 240, 0.84);
-}
-
-.page-hero--production-support h1 {
-  color: var(--color-inverse);
-  text-wrap: balance;
-}
-
-.page-hero--production-support .button--secondary {
-  color: var(--color-inverse);
-  border-color: rgba(247, 245, 240, 0.24);
-  background: rgba(255, 255, 255, 0.06);
-}
-
-.page-hero--production-support .button--secondary:hover,
-.page-hero--production-support .button--secondary:focus-visible {
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(247, 245, 240, 0.42);
-  color: var(--color-inverse);
-}
-
-.page-hero--production-support .hero-aside .card {
-  background: linear-gradient(180deg, rgba(8, 16, 25, 0.8), rgba(8, 16, 25, 0.64));
-  border-color: rgba(247, 245, 240, 0.16);
-  color: var(--color-inverse);
-  backdrop-filter: blur(6px);
-}
-
-.page-hero--production-support .page-type-badge {
-  border-color: rgba(247, 245, 240, 0.18);
-  background: rgba(255, 255, 255, 0.08);
-  color: rgba(247, 245, 240, 0.92);
-}
-
-.page-hero--production-support .hero-aside dt {
-  color: rgba(247, 245, 240, 0.62);
-}
-
-.page-hero--production-support .hero-aside dd {
-  color: var(--color-inverse);
-}
-
-@media (max-width: 47.99rem) {
-  .page-hero--production-support::before {
-    inset: 0;
-    transform: none;
-    background-position: 62% center;
-    will-change: auto;
-  }
-
-  .page-hero--production-support::after {
-    background:
-      linear-gradient(180deg, rgba(8, 16, 25, 0.92) 0%, rgba(8, 16, 25, 0.76) 34%, rgba(8, 16, 25, 0.58) 58%, rgba(8, 16, 25, 0.82) 100%),
-      linear-gradient(90deg, rgba(8, 16, 25, 0.72) 0%, rgba(8, 16, 25, 0.24) 54%, rgba(8, 16, 25, 0.08) 100%);
-  }
-
-  .page-hero--production-support .hero-aside .card {
-    backdrop-filter: none;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .page-hero--production-support::before {
-    transform: none;
-    will-change: auto;
-  }
-}
-</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Production Support in Paraguay", "url": "https://maitemedia.com/services/production-support/", "description": "Need local production support in Paraguay? Maite Media helps agencies and production companies with crews, coordination, logistics, and on-the-ground execution.", "isPartOf": {"@type": "WebSite", "url": "https://maitemedia.com/"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://maitemedia.com/"}, {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://maitemedia.com/services/"}, {"@type": "ListItem", "position": 3, "name": "Production Support", "item": "https://maitemedia.com/services/production-support/"}]}</script>
 </head>
@@ -192,7 +60,7 @@
 </div>
 </header>
 <main class="site-main" id="main-content">
-<section class="page-hero page-hero--production-support">
+<section class="page-hero">
 <div class="container page-hero__inner">
 <div class="page-hero__content">
 <nav aria-label="Breadcrumb" class="breadcrumbs"><ol><li><a href="/">Home</a></li><li><a href="/services/">Services</a></li><li aria-current="page">Production Support</li></ol></nav>
@@ -210,7 +78,7 @@
 </aside>
 </div>
 </section>
-<section class="section section--surface"><div class="container section__inner"><div class="section__heading"><h2>Practical support for productions that need to move</h2><p>Production support is the structure behind a shoot that needs to work.</p></div><div class="content-split"><div class="content-stack"><div class="content-block"><h3>What production support may include</h3><ul class="list-check"><li>Local coordination and scheduling</li><li>Crew sourcing and on-site supervision</li><li>Production planning and field logistics</li><li>Location research and local problem-solving</li><li>Interview setup and shoot-day management</li><li>Technical coordination across vendors and contributors</li></ul></div><div class="content-block"><h3>The goal stays the same</h3><p>Help outside teams produce in Paraguay with fewer delays, fewer blind spots, and better control on the ground.</p></div></div><aside class="content-stack"><div class="surface-note"><h3>Built for buyers who already know local execution matters</h3><p>This page is for agencies running campaigns, production companies needing local support, international teams coordinating remotely, and organizations that need a trusted partner to manage field execution.</p></div><div class="surface-note"><h3>A clear process from brief to execution</h3><p>Most projects begin with a working brief, a timeline, and a defined local requirement. We review scope, define what must be handled locally, confirm the operating model, and align on the production path.</p></div></aside></div></div></section><section class="section"><div class="container section__inner"><div class="section__heading"><h2>Why local support matters</h2><p>Reliable local support helps international teams reduce travel costs, avoid production friction, and move through each stage with trusted guidance on the ground.</p></div><div class="content-stack"><div class="content-block"><h3>Paraguay rewards preparation</h3><p>Communication gaps, scheduling friction, under-scoped logistics, and mismatched expectations create avoidable production risk. A strong local partner helps reduce that risk.</p><p>Maite Media is structured to give external teams a practical operating point inside Paraguay, with communication that stays clear and execution that stays grounded.</p></div><div class="content-block"><h3>Priority internal routes from this page</h3><ul class="list-check"><li><a href="/who-we-work-with/agencies/">For Agencies</a></li><li><a href="/who-we-work-with/production-companies/">For Production Companies</a></li><li><a href="/production-capabilities/">Production Capabilities</a></li><li><a href="/where-we-work/paraguay/">Paraguay</a></li></ul></div></div></div></section><section class="section section--surface"><div class="container section__inner"><div class="section__heading"><h2>Frequently asked questions</h2></div><div class="faq-list"><details class="faq-item"><summary>What does production support include?</summary><div class="faq-item__body"><p>It can include local coordination, field logistics, crew support, shoot-day supervision, interview setup, and practical on-the-ground problem-solving depending on scope.</p></div></details><details class="faq-item"><summary>Do you work with international agencies and production companies?</summary><div class="faq-item__body"><p>Yes. This service is built specifically for external teams that need reliable execution support in Paraguay.</p></div></details><details class="faq-item"><summary>Can you support just part of a production?</summary><div class="faq-item__body"><p>Yes. Support can be scoped around the part of the production that needs local execution rather than a full end-to-end engagement.</p></div></details><details class="faq-item"><summary>Do you provide local crews in Paraguay?</summary><div class="faq-item__body"><p>The service is designed to support local execution needs, including crew coordination when the brief requires it.</p></div></details></div></div></section><section class="section"><div class="container section__inner"><div class="template-callout"><span class="kicker">Get in touch</span><h2>Need a local production partner in Paraguay?</h2><p>Send the brief, the timing, and the type of support your team needs. We will help define the right production setup.</p><div class="button-group"><a class="button button--primary" href="/contact/">Discuss Your Project</a><a class="button button--secondary" href="/who-we-work-with/agencies/">See How We Work With Agencies</a></div></div></div></section>
+<section class="section section--surface"><div class="container section__inner"><div class="section__heading"><h2>Practical support for productions that need to move</h2><p>Production support is the structure behind a shoot that needs to work.</p></div><div class="content-split"><div class="content-stack"><div class="content-block"><h3>What production support may include</h3><ul class="list-check"><li>Local coordination and scheduling</li><li>Crew sourcing and on-site supervision</li><li>Production planning and field logistics</li><li>Location research and local problem-solving</li><li>Interview setup and shoot-day management</li><li>Technical coordination across vendors and contributors</li></ul></div><div class="content-block"><h3>The goal stays the same</h3><p>Help outside teams produce in Paraguay with fewer delays, fewer blind spots, and better control on the ground.</p></div></div><aside class="content-stack"><div class="surface-note"><h3>Built for buyers who already know local execution matters</h3><p>This page is for agencies running campaigns, production companies needing local support, international teams coordinating remotely, and organizations that need a trusted partner to manage field execution.</p></div><div class="surface-note"><h3>A clear process from brief to execution</h3><p>Most projects begin with a working brief, a timeline, and a defined local requirement. We review scope, define what must be handled locally, confirm the operating model, and align on the production path.</p></div></aside></div></div></section><section class="section"><div class="container section__inner"><div class="section__heading"><h2>Why local support matters</h2><p>Remote teams often lose time when local execution is treated as an afterthought.</p></div><div class="content-stack"><div class="content-block"><h3>Paraguay rewards preparation</h3><p>Communication gaps, scheduling friction, under-scoped logistics, and mismatched expectations create avoidable production risk. A strong local partner helps reduce that risk.</p><p>Maite Media is structured to give external teams a practical operating point inside Paraguay, with communication that stays clear and execution that stays grounded.</p></div><div class="content-block"><h3>Priority internal routes from this page</h3><ul class="list-check"><li><a href="/who-we-work-with/agencies/">For Agencies</a></li><li><a href="/who-we-work-with/production-companies/">For Production Companies</a></li><li><a href="/production-capabilities/">Production Capabilities</a></li><li><a href="/where-we-work/paraguay/">Paraguay</a></li></ul></div></div></div></section><section class="section section--surface"><div class="container section__inner"><div class="section__heading"><h2>Frequently asked questions</h2></div><div class="faq-list"><details class="faq-item"><summary>What does production support include?</summary><div class="faq-item__body"><p>It can include local coordination, field logistics, crew support, shoot-day supervision, interview setup, and practical on-the-ground problem-solving depending on scope.</p></div></details><details class="faq-item"><summary>Do you work with international agencies and production companies?</summary><div class="faq-item__body"><p>Yes. This service is built specifically for external teams that need reliable execution support in Paraguay.</p></div></details><details class="faq-item"><summary>Can you support just part of a production?</summary><div class="faq-item__body"><p>Yes. Support can be scoped around the part of the production that needs local execution rather than a full end-to-end engagement.</p></div></details><details class="faq-item"><summary>Do you provide local crews in Paraguay?</summary><div class="faq-item__body"><p>The service is designed to support local execution needs, including crew coordination when the brief requires it.</p></div></details></div></div></section><section class="section"><div class="container section__inner"><div class="template-callout"><span class="kicker">Get in touch</span><h2>Need a local production partner in Paraguay?</h2><p>Send the brief, the timing, and the type of support your team needs. We will help define the right production setup.</p><div class="button-group"><a class="button button--primary" href="/contact/">Discuss Your Project</a><a class="button button--secondary" href="/who-we-work-with/agencies/">See How We Work With Agencies</a></div></div></div></section>
 </main>
 <footer class="site-footer">
 <div class="container">
@@ -238,53 +106,5 @@
 </footer>
 </div>
 <script defer="" src="../../assets/js/navigation.js"></script>
-<script>
-(() => {
-  const hero = document.querySelector('.page-hero--production-support');
-  if (!hero) return;
-
-  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  const mobileViewport = window.matchMedia('(max-width: 47.99rem)');
-  let frame = null;
-
-  const updateParallax = () => {
-    frame = null;
-
-    if (prefersReducedMotion.matches || mobileViewport.matches) {
-      hero.style.setProperty('--production-support-hero-parallax', '0px');
-      return;
-    }
-
-    const rect = hero.getBoundingClientRect();
-    const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
-
-    if (rect.bottom <= 0 || rect.top >= viewportHeight) {
-      return;
-    }
-
-    const offset = Math.max(-20, Math.min(20, rect.top * -0.08));
-    hero.style.setProperty('--production-support-hero-parallax', `${offset.toFixed(2)}px`);
-  };
-
-  const requestTick = () => {
-    if (frame !== null) return;
-    frame = window.requestAnimationFrame(updateParallax);
-  };
-
-  updateParallax();
-  window.addEventListener('scroll', requestTick, { passive: true });
-  window.addEventListener('resize', requestTick);
-
-  const handleMediaChange = () => requestTick();
-
-  if (typeof prefersReducedMotion.addEventListener === 'function') {
-    prefersReducedMotion.addEventListener('change', handleMediaChange);
-    mobileViewport.addEventListener('change', handleMediaChange);
-  } else if (typeof prefersReducedMotion.addListener === 'function') {
-    prefersReducedMotion.addListener(handleMediaChange);
-    mobileViewport.addListener(handleMediaChange);
-  }
-})();
-</script>
 </body>
 </html>
