@@ -24,6 +24,124 @@
 <link href="../assets/css/main.css" rel="stylesheet"/>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Who We Work With", "url": "https://en.maitemedia.com/who-we-work-with/", "description": "Maite Media works with agencies, production companies, corporate teams, nonprofits, and institutions that need a trusted production partner in Paraguay.", "isPartOf": {"@type": "WebSite", "url": "https://en.maitemedia.com/"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://en.maitemedia.com/"}, {"@type": "ListItem", "position": 2, "name": "Who We Work With", "item": "https://en.maitemedia.com/who-we-work-with/"}]}</script>
+
+<style>
+.page-hero--who-we-work-with {
+  position: relative;
+  isolation: isolate;
+  background-color: #0d1722;
+}
+
+.page-hero--who-we-work-with::before,
+.page-hero--who-we-work-with::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.page-hero--who-we-work-with::before {
+  z-index: 0;
+  background-image: image-set(
+    url("../assets/img/site/who-we-work-with-hero-background.webp") type("image/webp"),
+    url("../assets/img/site/who-we-work-with-hero-background.jpg") type("image/jpeg")
+  );
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.page-hero--who-we-work-with::after {
+  z-index: 1;
+  background:
+    linear-gradient(180deg, rgba(8, 13, 20, 0.8) 0%, rgba(8, 13, 20, 0.62) 44%, rgba(8, 13, 20, 0.7) 100%),
+    radial-gradient(circle at 72% 32%, rgba(38, 47, 58, 0.14), transparent 30%);
+}
+
+.page-hero--who-we-work-with .page-hero__inner {
+  position: relative;
+  z-index: 2;
+}
+
+.page-hero--who-we-work-with h1,
+.page-hero--who-we-work-with .breadcrumbs a,
+.page-hero--who-we-work-with .breadcrumbs li[aria-current="page"] {
+  color: var(--color-inverse);
+}
+
+.page-hero--who-we-work-with .page-hero__eyebrow,
+.page-hero--who-we-work-with .page-hero__lead {
+  color: rgba(247, 245, 240, 0.9);
+}
+
+.page-hero--who-we-work-with .breadcrumbs ol {
+  background: rgba(9, 15, 23, 0.46);
+  border-color: rgba(247, 245, 240, 0.18);
+  color: rgba(247, 245, 240, 0.82);
+}
+
+.page-hero--who-we-work-with .breadcrumbs li:not(:last-child)::after {
+  color: rgba(247, 245, 240, 0.5);
+}
+
+.page-hero--who-we-work-with .page-label {
+  background: rgba(247, 245, 240, 0.12);
+  border-color: rgba(247, 245, 240, 0.2);
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.page-hero--who-we-work-with .button--primary {
+  background: rgba(247, 245, 240, 0.96);
+  color: var(--color-ink);
+  border-color: rgba(247, 245, 240, 0.96);
+}
+
+.page-hero--who-we-work-with .button--primary:hover,
+.page-hero--who-we-work-with .button--primary:focus-visible {
+  background: #ffffff;
+}
+
+.page-hero--who-we-work-with .button--secondary {
+  background: rgba(247, 245, 240, 0.08);
+  color: var(--color-inverse);
+  border-color: rgba(247, 245, 240, 0.38);
+}
+
+.page-hero--who-we-work-with .button--secondary:hover,
+.page-hero--who-we-work-with .button--secondary:focus-visible {
+  background: rgba(247, 245, 240, 0.16);
+  border-color: rgba(247, 245, 240, 0.62);
+  color: var(--color-inverse);
+}
+
+.page-hero--who-we-work-with .hero-aside__benefits {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.page-hero--who-we-work-with .hero-aside__benefits li {
+  position: relative;
+  padding-left: 1rem;
+  color: var(--color-ink);
+  line-height: 1.55;
+}
+
+.page-hero--who-we-work-with .hero-aside__benefits li::before {
+  content: "";
+  position: absolute;
+  top: 0.72em;
+  left: 0;
+  width: 0.36rem;
+  height: 0.36rem;
+  border-radius: 999px;
+  background: var(--color-brand);
+  transform: translateY(-50%);
+}
+</style>
+
 </head>
 <body class="">
 <a class="skip-link" href="#main-content">Skip to content</a>
@@ -60,12 +178,12 @@
 </div>
 </header>
 <main class="site-main" id="main-content">
-<section class="page-hero">
+<section class="page-hero page-hero--who-we-work-with">
 <div class="container page-hero__inner">
 <div class="page-hero__content">
 <nav aria-label="Breadcrumb" class="breadcrumbs"><ol><li><a href="/">Home</a></li><li aria-current="page">Who We Work With</li></ol></nav>
-<span class="page-label">Buyer hub</span>
-<p class="page-hero__eyebrow">Different buyers need different kinds of production support.</p>
+<span class="page-label">CLIENTS HUB</span>
+<p class="page-hero__eyebrow">Different clients need different kinds of production support.</p>
 <h1>Who We Work With</h1>
 <p class="page-hero__lead">Maite Media works with agencies, production companies, corporate teams, nonprofits, and institutions that need local production capability in Paraguay with clear communication and reliable execution.</p>
 <div class="button-group">
@@ -74,11 +192,11 @@
 </div>
 </div>
 <aside aria-label="Page overview" class="hero-aside">
-<div class="card"><span class="page-type-badge">Buyer intent</span><dl><div><dt>Purpose</dt><dd>Buyer-fit routing</dd></div><div><dt>Primary market</dt><dd>International buyers evaluating fit in Paraguay</dd></div><div><dt>Best next step</dt><dd>Choose the page that matches how your team buys</dd></div></dl></div>
+<div class="card"><span class="page-type-badge">Why local production support helps</span><ul class="hero-aside__benefits"><li>Faster coordination on the ground</li><li>Better control of logistics, crew, and vendors</li><li>Fewer production delays and surprises</li><li>Clearer communication across remote and local teams</li><li>A trusted partner from brief to execution</li></ul></div>
 </aside>
 </div>
 </section>
-<section class="section section--surface"><div class="container section__inner"><div class="section__heading"><h2>Choose the page that fits your organization</h2><p>These pages are designed for buyers evaluating workflow fit, risk reduction, and the kind of production support their team actually needs.</p></div><div class="grid grid--2"><article class="card"><h3>For Agencies</h3><p>For agency teams that need a responsive production partner able to execute locally and protect the brief.</p><a href="/who-we-work-with/agencies/">See how we work with agencies</a></article><article class="card"><h3>For Production Companies</h3><p>For production teams looking for local support, crews, and execution in Paraguay.</p><a href="/who-we-work-with/production-companies/">See how we work with production companies</a></article><article class="card"><h3>For Corporate Teams</h3><p>For companies producing internal, external, executive, or event-related communication content.</p><a href="/who-we-work-with/corporate-teams/">See how we work with corporate teams</a></article><article class="card"><h3>For Nonprofits &amp; Institutions</h3><p>For mission-driven and stakeholder-facing organizations that need a partner who understands approvals, context, and trust.</p><a href="/who-we-work-with/nonprofits-and-institutions/">See how we work with nonprofits &amp; institutions</a></article></div></div></section><section class="section"><div class="container section__inner"><div class="section__heading"><h2>Start with the way your team buys</h2><p>If your main question is about the kind of service you need, go to <a href="/services/">Services</a>. If your main question is whether Maite Media fits your organization, start here.</p></div><div class="content-stack"><div class="surface-note"><h3>Why these buyer pages matter</h3><p>Different teams buy production for different reasons. These pages help agencies, production companies, corporate teams, and institutions evaluate Maite Media through the lens they actually use to make decisions, while service ownership still lives inside the service pages.</p></div></div></div></section><section class="section section--surface"><div class="container section__inner"><div class="section__heading"><h2>Frequently asked questions</h2></div><div class="faq-list"><details class="faq-item"><summary>Should I start with Services or Who We Work With?</summary><div class="faq-item__body"><p>Start with Services if you already know the production need. Start here if you are evaluating whether Maite Media fits your organization.</p></div></details><details class="faq-item"><summary>Do you work with both in-house and external teams?</summary><div class="faq-item__body"><p>Yes. The buyer pages are structured around agencies, production companies, corporate teams, nonprofits, and institutions.</p></div></details><details class="faq-item"><summary>Which page is right for international buyers?</summary><div class="faq-item__body"><p>Choose the page that matches the team structure and workflow on your side. International agencies, production companies, and organizations each have their own buyer page.</p></div></details></div></div></section><section class="section"><div class="container section__inner"><div class="template-callout"><span class="kicker">Get in touch</span><h2>Looking for the right production partner fit?</h2><p>Choose the page that matches your team, then get in touch with your project scope.</p><div class="button-group"><a class="button button--primary" href="/contact/">Request a Quote</a><a class="button button--secondary" href="/services/">Explore Services</a></div></div></div></section>
+<section class="section section--surface"><div class="container section__inner"><div class="section__heading"><h2>Choose the page that fits your organization</h2><p>These pages are designed for buyers evaluating workflow fit, risk reduction, and the kind of production support their team actually needs.</p></div><div class="grid grid--2"><article class="card"><h3>For Agencies</h3><p>For agency teams that need a responsive production partner able to execute locally and protect the brief.</p><a href="/who-we-work-with/agencies/">See how we work with agencies</a></article><article class="card"><h3>For Production Companies</h3><p>For production teams looking for local support, crews, and execution in Paraguay.</p><a href="/who-we-work-with/production-companies/">See how we work with production companies</a></article><article class="card"><h3>For Corporate Teams</h3><p>For companies producing internal, external, executive, or event-related communication content.</p><a href="/who-we-work-with/corporate-teams/">See how we work with corporate teams</a></article><article class="card"><h3>For Nonprofits &amp; Institutions</h3><p>For mission-driven and stakeholder-facing organizations that need a partner who understands approvals, context, and trust.</p><a href="/who-we-work-with/nonprofits-and-institutions/">See how we work with nonprofits &amp; institutions</a></article></div></div></section><section class="section"><div class="container section__inner"><div class="section__heading"><h2>Start with the way your team chooses the right local partner</h2><p>If your main question is about the kind of service you need, go to <a href="/services/">Services</a>. If your main question is whether Maite Media fits your organization, start here.</p></div><div class="content-stack"><div class="surface-note"><h3>Clarity before cameras roll</h3><p>Different teams buy production for different reasons. These pages help agencies, production companies, corporate teams, and institutions evaluate Maite Media through the lens they actually use to make decisions, while service ownership still lives inside the service pages.</p></div></div></div></section><section class="section section--surface"><div class="container section__inner"><div class="section__heading"><h2>Frequently asked questions</h2></div><div class="faq-list"><details class="faq-item"><summary>Should I start with Services or Who We Work With?</summary><div class="faq-item__body"><p>Start with Services if you already know the production need. Start here if you are evaluating whether Maite Media fits your organization.</p></div></details><details class="faq-item"><summary>Do you work with both in-house and external teams?</summary><div class="faq-item__body"><p>Yes. The buyer pages are structured around agencies, production companies, corporate teams, nonprofits, and institutions.</p></div></details><details class="faq-item"><summary>Which page is right for international buyers?</summary><div class="faq-item__body"><p>Choose the page that matches the team structure and workflow on your side. International agencies, production companies, and organizations each have their own buyer page.</p></div></details></div></div></section><section class="section"><div class="container section__inner"><div class="template-callout"><span class="kicker">Get in touch</span><h2>Looking for the right production partner fit?</h2><p>Choose the page that matches your team, then get in touch with your project scope.</p><div class="button-group"><a class="button button--primary" href="/contact/">Request a Quote</a><a class="button button--secondary" href="/services/">Explore Services</a></div></div></div></section>
 </main>
 <footer class="site-footer">
 <div class="container">
