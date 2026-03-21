@@ -22,6 +22,158 @@
 <meta content="https://maitemedia.com/assets/img/og/default-og.png" name="twitter:image"/>
 <link as="style" href="../../assets/css/main.css" rel="preload"/>
 <link href="../../assets/css/main.css" rel="stylesheet"/>
+<style>
+.page-hero--production-companies-video {
+  --production-companies-hero-shift: 0px;
+  background: #081019;
+  color: var(--color-inverse);
+  isolation: isolate;
+}
+
+.page-hero--production-companies-video::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -3;
+  background-image: url("../../assets/img/site/production-companies-hero-poster.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+.page-hero--production-companies-video::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(90deg, rgba(8, 16, 25, 0.92) 0%, rgba(8, 16, 25, 0.85) 34%, rgba(8, 16, 25, 0.64) 58%, rgba(8, 16, 25, 0.5) 100%),
+    linear-gradient(180deg, rgba(8, 16, 25, 0.42) 0%, rgba(8, 16, 25, 0.18) 28%, rgba(8, 16, 25, 0.72) 100%),
+    radial-gradient(circle at 22% 20%, rgba(255, 221, 176, 0.08), transparent 30%);
+  pointer-events: none;
+}
+
+.page-hero--production-companies-video .page-hero__media {
+  position: absolute;
+  inset: -8% 0;
+  z-index: -2;
+  overflow: hidden;
+  pointer-events: none;
+  transform: translate3d(0, var(--production-companies-hero-shift), 0) scale(1.08);
+  transform-origin: center center;
+  will-change: transform;
+}
+
+.page-hero--production-companies-video .page-hero__media video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
+
+.page-hero--production-companies-video .page-hero__inner {
+  position: relative;
+  z-index: 1;
+}
+
+.page-hero--production-companies-video .breadcrumbs ol {
+  border-color: rgba(247, 245, 240, 0.16);
+  background: rgba(8, 16, 25, 0.4);
+  color: rgba(247, 245, 240, 0.78);
+}
+
+.page-hero--production-companies-video .breadcrumbs li:not(:last-child)::after {
+  color: rgba(247, 245, 240, 0.36);
+}
+
+.page-hero--production-companies-video .breadcrumbs a,
+.page-hero--production-companies-video .breadcrumbs li[aria-current="page"] {
+  color: var(--color-inverse);
+}
+
+.page-hero--production-companies-video .page-label {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(247, 245, 240, 0.18);
+  color: rgba(247, 245, 240, 0.96);
+}
+
+.page-hero--production-companies-video .page-hero__eyebrow,
+.page-hero--production-companies-video .page-hero__lead {
+  color: rgba(247, 245, 240, 0.84);
+}
+
+.page-hero--production-companies-video h1 {
+  color: var(--color-inverse);
+  text-wrap: balance;
+}
+
+.page-hero--production-companies-video .button--secondary {
+  color: var(--color-inverse);
+  border-color: rgba(247, 245, 240, 0.24);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.page-hero--production-companies-video .button--secondary:hover,
+.page-hero--production-companies-video .button--secondary:focus-visible {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(247, 245, 240, 0.42);
+  color: var(--color-inverse);
+}
+
+.page-hero--production-companies-video .hero-aside .card {
+  background: linear-gradient(180deg, rgba(8, 16, 25, 0.8), rgba(8, 16, 25, 0.64));
+  border-color: rgba(247, 245, 240, 0.16);
+  color: var(--color-inverse);
+  backdrop-filter: blur(6px);
+}
+
+.page-hero--production-companies-video .page-type-badge {
+  border-color: rgba(247, 245, 240, 0.18);
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(247, 245, 240, 0.92);
+}
+
+.page-hero--production-companies-video .hero-aside dt {
+  color: rgba(247, 245, 240, 0.62);
+}
+
+.page-hero--production-companies-video .hero-aside dd,
+.page-hero--production-companies-video .hero-aside dd a {
+  color: var(--color-inverse);
+}
+
+@media (max-width: 47.99rem) {
+  .page-hero--production-companies-video::before {
+    background-position: 68% center;
+  }
+
+  .page-hero--production-companies-video::after {
+    background:
+      linear-gradient(180deg, rgba(8, 16, 25, 0.92) 0%, rgba(8, 16, 25, 0.78) 36%, rgba(8, 16, 25, 0.58) 58%, rgba(8, 16, 25, 0.82) 100%),
+      linear-gradient(90deg, rgba(8, 16, 25, 0.68) 0%, rgba(8, 16, 25, 0.32) 52%, rgba(8, 16, 25, 0.18) 100%);
+  }
+
+  .page-hero--production-companies-video .page-hero__media {
+    display: none;
+    transform: none;
+    will-change: auto;
+  }
+
+  .page-hero--production-companies-video .hero-aside .card {
+    backdrop-filter: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-hero--production-companies-video .page-hero__media {
+    display: none;
+    transform: none;
+    will-change: auto;
+  }
+}
+</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "For Production Companies", "url": "https://maitemedia.com/who-we-work-with/production-companies/", "description": "Maite Media helps production companies execute projects in Paraguay with local coordination, on-the-ground support, and reliable production assistance.", "isPartOf": {"@type": "WebSite", "url": "https://maitemedia.com/"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://maitemedia.com/"}, {"@type": "ListItem", "position": 2, "name": "Who We Work With", "item": "https://maitemedia.com/who-we-work-with/"}, {"@type": "ListItem", "position": 3, "name": "For Production Companies", "item": "https://maitemedia.com/who-we-work-with/production-companies/"}]}</script>
 </head>
@@ -60,14 +212,19 @@
 </div>
 </header>
 <main class="site-main" id="main-content">
-<section class="page-hero">
+<section class="page-hero page-hero--production-companies-video">
+<div aria-hidden="true" class="page-hero__media">
+<video autoplay="" loop="" muted="" playsinline="" poster="../../assets/img/site/production-companies-hero-poster.jpg" preload="metadata">
+<source src="../../assets/video/site/production-companies-hero.mp4" type="video/mp4"/>
+</video>
+</div>
 <div class="container page-hero__inner">
 <div class="page-hero__content">
 <nav aria-label="Breadcrumb" class="breadcrumbs"><ol><li><a href="/">Home</a></li><li><a href="/">Who We Work With</a></li><li aria-current="page">For Production Companies</li></ol></nav>
 <span class="page-label">Buyer page</span>
 <p class="page-hero__eyebrow">Local production support in Paraguay for teams that already know how production works.</p>
-<h1>For Production Companies</h1>
-<p class="page-hero__lead">Maite Media supports production companies that need a capable local partner in Paraguay for field coordination, local execution, operational support, and production problem-solving on the ground.</p>
+<h1>For Video Production Companies</h1>
+<p class="page-hero__lead">Maite Media supports video production companies abroad that need a capable local partner in Paraguay for field coordination, local execution, operational support, and production problem-solving on the ground.</p>
 <div class="button-group">
 <a class="button button--primary" href="/contact/">Discuss a Production in Paraguay</a>
 <a class="button button--secondary" href="/services/production-support/">See Production Support</a>
@@ -78,7 +235,7 @@
 </aside>
 </div>
 </section>
-<section class="section section--surface"><div class="container section__inner"><div class="section__heading"><h2>Production companies usually buy for operational fit</h2><p>Production company buyers are not looking for broad promises. They are evaluating whether the local partner can work inside a production system and execute under real conditions.</p></div><div class="content-split"><div class="content-stack"><div class="content-block"><h3>What matters most</h3><ul class="list-check"><li>Practical coordination</li><li>Reliability on the ground</li><li>Workable communication</li><li>Local adaptability</li><li>Production discipline under real conditions</li></ul></div><div class="content-block"><h3>The concern is operational</h3><p>Production companies are usually trying to reduce local execution gaps, field confusion, avoidable delays, and weak on-the-ground communication.</p></div></div><aside class="content-stack"><div class="surface-note"><h3>A local extension of the production plan</h3><p>Maite Media helps translate the production brief into workable field execution, support local coordination, and keep communication practical throughout the process.</p></div><div class="surface-note"><h3>We are not replacing the production company’s role</h3><p>We are helping make local execution stronger, whether the need is production support, event capture, drone integration, interviews, or technical assistance.</p></div></aside></div></div></section><section class="section"><div class="container section__inner"><div class="section__heading"><h2>Common production company entry points</h2><p>Production companies most often start with these production paths.</p></div><div class="grid grid--2"><article class="card"><h3>Production Support</h3><p>The clearest entry point for local coordination and execution in Paraguay.</p><a href="/services/production-support/">View Production Support</a></article><article class="card"><h3>Drone Filming</h3><p>Useful when aerial capture supports a wider production scope.</p><a href="/services/drone-filming/">View Drone Filming</a></article><article class="card"><h3>Event Video Production</h3><p>Relevant for structured event capture within a broader production plan.</p><a href="/services/event-video-production/">View Event Video Production</a></article><article class="card"><h3>Production Capabilities</h3><p>Useful when the buyer needs reassurance around setups, environments, and operational readiness.</p><a href="/production-capabilities/">View Production Capabilities</a></article></div></div></section><section class="section section--surface"><div class="container section__inner"><div class="section__heading"><h2>Frequently asked questions</h2></div><div class="faq-list"><details class="faq-item"><summary>Do you support outside production companies working in Paraguay?</summary><div class="faq-item__body"><p>Yes. This page is built for external production teams looking for local support in Paraguay.</p></div></details><details class="faq-item"><summary>Can you help with local coordination and field execution?</summary><div class="faq-item__body"><p>Yes. Local coordination and on-the-ground execution support are central to this buyer page.</p></div></details><details class="faq-item"><summary>Do you work as part of an existing production system?</summary><div class="faq-item__body"><p>Yes. The model is designed to support, not replace, an existing production structure.</p></div></details><details class="faq-item"><summary>Can drone or event coverage be integrated into a broader production?</summary><div class="faq-item__body"><p>Yes. Both can be integrated when they support the broader brief.</p></div></details></div></div></section><section class="section"><div class="container section__inner"><div class="template-callout"><span class="kicker">Get in touch</span><h2>Need a local production partner in Paraguay?</h2><p>Send the brief, schedule, and expected local scope. We will help define the support model that best fits the production.</p><div class="button-group"><a class="button button--primary" href="/contact/">Discuss a Production in Paraguay</a><a class="button button--secondary" href="/services/production-support/">See Production Support</a></div></div></div></section>
+<section class="section section--surface"><div class="container section__inner"><div class="section__heading"><h2>Abroad production companies usually choose a local company for operational fit</h2><p>Production company buyers are not looking for broad promises. They are evaluating whether the local partner can work inside a production system and execute under real conditions.</p></div><div class="content-split"><div class="content-stack"><div class="content-block"><h3>What matters most</h3><ul class="list-check"><li>Practical coordination</li><li>Reliability on the ground</li><li>Workable communication</li><li>Local adaptability</li><li>Production discipline under real conditions</li></ul></div><div class="content-block"><h3>The concern is operational</h3><p>Production companies are usually trying to reduce local execution gaps, field confusion, avoidable delays, and weak on-the-ground communication.</p></div></div><aside class="content-stack"><div class="surface-note"><h3>A local extension of the production plan</h3><p>Maite Media helps translate the production brief into workable field execution, support local coordination, and keep communication practical throughout the process.</p></div><div class="surface-note"><h3>We are not replacing the production company’s role</h3><p>We are helping make local execution stronger, whether the need is production support, event capture, drone integration, interviews, or technical assistance.</p></div></aside></div></div></section><section class="section"><div class="container section__inner"><div class="section__heading"><h2>Common production company entry points</h2><p>Production companies most often start with these production paths.</p></div><div class="grid grid--2"><article class="card"><h3>Production Support</h3><p>The clearest entry point for local coordination and execution in Paraguay.</p><a href="/services/production-support/">View Production Support</a></article><article class="card"><h3>Drone Filming</h3><p>Useful when aerial capture supports a wider production scope.</p><a href="/services/drone-filming/">View Drone Filming</a></article><article class="card"><h3>Event Video Production</h3><p>Relevant for structured event capture within a broader production plan.</p><a href="/services/event-video-production/">View Event Video Production</a></article><article class="card"><h3>Production Capabilities</h3><p>Useful when the buyer needs reassurance around setups, environments, and operational readiness.</p><a href="/production-capabilities/">View Production Capabilities</a></article></div></div></section><section class="section section--surface"><div class="container section__inner"><div class="section__heading"><h2>Frequently asked questions</h2></div><div class="faq-list"><details class="faq-item"><summary>Do you support outside production companies working in Paraguay?</summary><div class="faq-item__body"><p>Yes. This page is built for external production teams looking for local support in Paraguay.</p></div></details><details class="faq-item"><summary>Can you help with local coordination and field execution?</summary><div class="faq-item__body"><p>Yes. Local coordination and on-the-ground execution support are central to this buyer page.</p></div></details><details class="faq-item"><summary>Do you work as part of an existing production system?</summary><div class="faq-item__body"><p>Yes. The model is designed to support, not replace, an existing production structure.</p></div></details><details class="faq-item"><summary>Can drone or event coverage be integrated into a broader production?</summary><div class="faq-item__body"><p>Yes. Both can be integrated when they support the broader brief.</p></div></details></div></div></section><section class="section"><div class="container section__inner"><div class="template-callout"><span class="kicker">Get in touch</span><h2>Need a local production partner in Paraguay?</h2><p>Send the brief, schedule, and expected local scope. We will help define the support model that best fits the production.</p><div class="button-group"><a class="button button--primary" href="/contact/">Discuss a Production in Paraguay</a><a class="button button--secondary" href="/services/production-support/">See Production Support</a></div></div></div></section>
 </main>
 <footer class="site-footer">
 <div class="container">
@@ -105,6 +262,80 @@
 </div>
 </footer>
 </div>
+<script>
+(() => {
+  const hero = document.querySelector('.page-hero--production-companies-video');
+  const media = hero?.querySelector('.page-hero__media');
+  const video = media?.querySelector('video');
+
+  if (!hero || !media || !video) {
+    return;
+  }
+
+  const desktopQuery = window.matchMedia('(min-width: 48rem)');
+  const reducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let scrollEnabled = false;
+  let ticking = false;
+
+  const updateShift = () => {
+    ticking = false;
+
+    if (!scrollEnabled) {
+      hero.style.setProperty('--production-companies-hero-shift', '0px');
+      return;
+    }
+
+    const rect = hero.getBoundingClientRect();
+    const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+
+    if (rect.bottom <= 0 || rect.top >= viewportHeight) {
+      hero.style.setProperty('--production-companies-hero-shift', '0px');
+      return;
+    }
+
+    const centerOffset = rect.top + (rect.height / 2) - (viewportHeight / 2);
+    const translateY = Math.max(-24, Math.min(24, centerOffset * -0.08));
+    hero.style.setProperty('--production-companies-hero-shift', `${translateY.toFixed(2)}px`);
+  };
+
+  const requestTick = () => {
+    if (!scrollEnabled || ticking) {
+      return;
+    }
+
+    ticking = true;
+    window.requestAnimationFrame(updateShift);
+  };
+
+  const syncMode = () => {
+    scrollEnabled = desktopQuery.matches && !reducedMotionQuery.matches;
+    hero.style.setProperty('--production-companies-hero-shift', '0px');
+
+    if (scrollEnabled) {
+      media.style.display = '';
+      video.play().catch(() => {});
+      updateShift();
+      return;
+    }
+
+    media.style.display = 'none';
+    video.pause();
+  };
+
+  syncMode();
+
+  window.addEventListener('scroll', requestTick, { passive: true });
+  window.addEventListener('resize', requestTick);
+
+  if (desktopQuery.addEventListener) {
+    desktopQuery.addEventListener('change', syncMode);
+    reducedMotionQuery.addEventListener('change', syncMode);
+  } else {
+    desktopQuery.addListener(syncMode);
+    reducedMotionQuery.addListener(syncMode);
+  }
+})();
+</script>
 <script defer="" src="../../assets/js/navigation.js"></script>
 </body>
 </html>
