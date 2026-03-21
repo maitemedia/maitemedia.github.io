@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://maitemedia.com/sitemap.xml
+Sitemap: https://en.maitemedia.com/sitemap.xml

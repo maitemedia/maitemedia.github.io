@@ -444,6 +444,23 @@ ol[role="list"] {
   font-size: 0.95rem;
 }
 
+.site-footer__legal-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+}
+
+.site-footer__legal-links a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-footer__legal-links a:hover,
+.site-footer__legal-links a:focus-visible {
+  color: var(--color-text);
+  text-decoration: underline;
+}
+
 @media (min-width: 64rem) {
   .site-nav,
   .header-cta {
