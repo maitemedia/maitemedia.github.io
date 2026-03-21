@@ -1,0 +1,19 @@
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.muted {
+  color: var(--color-ink-soft);
+}
+
+.max-reading {
+  max-width: var(--reading-max);
+}
